@@ -4,8 +4,8 @@
   "name": "Frata Robotics",
   "colors": {
     "primary": "#F96302",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#FF7A1A",
+    "dark": "#D94E00"
   },
   "favicon": "/favicon.svg",
   "navigation": {
