@@ -13,16 +13,25 @@ Enter your email below and we'll reach out to discuss partnership opportunities.
 
 ### Contact Information
 
-<iframe 
-  src="https://formspree.io/forms/manrkzze/integration"
-  style={{
-    width: '100%',
-    maxWidth: '600px',
-    height: '120px',
-    border: 'none',
-    marginTop: '2rem'
-  }}
-/>
+### Contact Information
+
+<form action="https://formspree.io/f/manrkzze" method="POST">
+  <div className="flex flex-col sm:flex-row gap-3 p-1.5 bg-zinc-900/30 backdrop-blur-sm border border-zinc-800 rounded-full max-w-xl">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="Enter your email address"
+      className="flex-1 px-6 py-3 bg-transparent outline-none text-gray-800 dark:text-white placeholder:text-gray-500 text-[15px] font-medium"
+    />
+    <button
+      type="submit"
+      className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-full transition-colors duration-200 whitespace-nowrap"
+    >
+      Get Started
+    </button>
+  </div>
+</form>
 
 <Note>
 We'll reach out within 2-3 business days to discuss how we can collaborate.
