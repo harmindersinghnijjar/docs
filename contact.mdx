@@ -7,43 +7,49 @@ description: "Connect with Frata Robotics — Accelerating U.S. Agriculture."
 
 Frata Robotics collaborates with robotics, drone, and IoT manufacturers advancing agricultural technology across the Pacific Northwest.
 
-Please share your details below and our operations team will reach out shortly.
+Enter your email below and we'll reach out to discuss partnership opportunities.
 
 ---
 
 ### Contact Information
 
-<Note>
-**Option 1: Embed a form service** - Replace this with Typeform, Fillout, Google Forms, or Tally embed
-
-**Option 2: Use the custom React form below** - Save as `/snippets/partner-form.jsx` and import it
-</Note>
-
-<Card title="Submit Partnership Inquiry" icon="envelope" href="mailto:partnerships@fratarobotics.com?subject=Partnership Inquiry">
-  Email us directly at partnerships@fratarobotics.com
-</Card>
+<div className="mt-8 max-w-xl">
+  <form className="flex flex-col sm:flex-row gap-3 p-1.5 bg-zinc-900/30 backdrop-blur-sm border border-zinc-800 rounded-full" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="Enter your email address"
+      className="flex-1 px-6 py-3 bg-transparent outline-none text-white placeholder:text-gray-500 text-[15px] font-medium"
+    />
+    <button
+      type="submit"
+      className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-full transition-colors duration-200 whitespace-nowrap"
+    >
+      Get Started
+    </button>
+  </form>
+  
+  <p className="mt-4 text-sm text-gray-400 text-center sm:text-left">
+    We'll reach out within 2-3 business days to discuss how we can collaborate.
+  </p>
+</div>
 
 ---
 
-### Alternative: Custom Form Integration
+### Why Partner with Frata?
 
-If you want to use a form service, here are the recommended options:
-
-<CardGroup cols={2}>
-  <Card title="Typeform" icon="clipboard-question" href="https://typeform.com">
-    Beautiful, conversational forms with great UX
+<CardGroup cols={3}>
+  <Card title="Innovation" icon="lightbulb">
+    Work with cutting-edge agricultural robotics technology
   </Card>
   
-  <Card title="Fillout" icon="file-lines" href="https://fillout.com">
-    Powerful forms with conditional logic
+  <Card title="Growth" icon="chart-line">
+    Expand your reach across the Pacific Northwest
   </Card>
   
-  <Card title="Tally" icon="check-square" href="https://tally.so">
-    Free, unlimited forms with no branding
-  </Card>
-  
-  <Card title="Google Forms" icon="google" href="https://forms.google.com">
-    Simple, free, integrates with Google Sheets
+  <Card title="Collaboration" icon="handshake">
+    Join a network of leading agtech manufacturers
   </Card>
 </CardGroup>
 
@@ -52,15 +58,19 @@ If you want to use a form service, here are the recommended options:
 ### What happens next?
 
 <Steps>
-  <Step title="Review">
-    Our operations team will review your inquiry within 2-3 business days
+  <Step title="Submit Your Email">
+    Enter your contact information above
   </Step>
   
-  <Step title="Discovery Call">
-    We'll schedule a call to discuss partnership opportunities
+  <Step title="We Reach Out">
+    Our team will contact you within 2-3 business days
   </Step>
   
-  <Step title="Technical Integration">
-    Explore integration possibilities and collaboration details
+  <Step title="Discovery Discussion">
+    We'll explore partnership opportunities together
+  </Step>
+  
+  <Step title="Begin Collaboration">
+    Start building the future of agriculture
   </Step>
 </Steps>
