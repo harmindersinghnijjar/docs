@@ -13,29 +13,27 @@ Enter your email below and we'll reach out to discuss partnership opportunities.
 
 ### Contact Information
 
-<div className="max-w-xl">
-  <form action="https://formspree.io/f/manrkzze" method="POST">
-    <div className="flex flex-col sm:flex-row gap-3 p-1.5 bg-zinc-900/30 backdrop-blur-sm border border-zinc-800 rounded-full">
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Enter your email address"
-        className="flex-1 px-6 py-3 bg-transparent outline-none text-gray-800 dark:text-white placeholder:text-gray-500 text-[15px] font-medium"
-      />
-      <button
-        type="submit"
-        className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-full transition-colors duration-200 whitespace-nowrap"
-      >
-        Get Started
-      </button>
-    </div>
-  </form>
-  
-  <p className="mt-4 text-sm text-gray-400 text-center sm:text-left">
-    We'll reach out within 2-3 business days to discuss how we can collaborate.
-  </p>
-</div>
+<form action="https://formspree.io/f/manrkzze" method="POST" class="mt-8 dark p-1 max-w-[22.5rem] w-full rounded-full border border-border-soft backdrop-blur-[12px] bg-border-soft flex items-center gap-1.5">
+  <input 
+    type="email" 
+    name="email"
+    required 
+    inputmode="email" 
+    autocomplete="email" 
+    placeholder="Email address" 
+    class="px-3 h-8 outline-none w-full placeholder:text-muted text-text-main text-[15px] font-medium leading-[150%]"
+  />
+  <button 
+    type="submit"
+    class="inline-flex items-center outline-offset-2 h-fit focus-visible:outline-2 focus-visible:outline-brand justify-center cursor-pointer gap-1.5 whitespace-nowrap rounded-full font-medium shrink-0 transition-[color,background-color] duration-100 shadow-button-sm bg-background-invert text-text-invert border border-background-invert hover:bg-background-invert/85 text-[15px] py-[4.5px] px-3"
+  >
+    Get Started
+  </button>
+</form>
+
+<p class="mt-4 text-sm text-muted">
+  We'll reach out within 2-3 business days to discuss how we can collaborate.
+</p>
 
 ---
 
