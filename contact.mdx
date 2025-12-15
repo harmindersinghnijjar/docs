@@ -1,11 +1,36 @@
+---
+title: "Contact"
+description: "Get in touch with Frata Robotics — Accelerating U.S. Agriculture."
+---
+
+<style>
+  :root {
+    --content-padding-top: 0 !important;
+  }
+
+  /* Hide Mintlify’s top section spacing */
+  main {
+    padding-top: 0 !important;
+  }
+
+  /* Prevent scroll and center all content */
+  body, html {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+</style>
+
 <div style={{
   display: 'flex',
+  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  minHeight: '100vh',
-  flexDirection: 'column',
+  height: '100vh',
   textAlign: 'center',
-  padding: '1rem'
+  padding: '0',
+  margin: '0 auto',
+  maxWidth: '640px'
 }}>
   <h2 style={{
     fontSize: '2rem',
@@ -32,14 +57,13 @@
     borderRadius: '20px',
     padding: '2.2rem',
     width: '100%',
-    maxWidth: '520px',
     boxShadow: '0 6px 24px rgba(0,0,0,0.25)',
     backdropFilter: 'blur(8px)'
   }}>
     <form
       action="https://formsubmit.co/harminder@frata.ag"
       method="POST"
-      onsubmit="setTimeout(() => { this.reset(); }, 300);"
+      onsubmit="setTimeout(() => { this.reset(); }, 400);"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -82,7 +106,7 @@
         transition: 'box-shadow 0.2s ease, border-color 0.2s ease'
       }} onFocus="this.style.boxShadow='0 0 6px rgba(249,99,2,0.4)';this.style.borderColor='#F96302'" onBlur="this.style.boxShadow='none';this.style.borderColor='rgba(255,255,255,0.1)'" />
 
-      <textarea name="message" placeholder="How can we help?" rows="4" style={{
+      <textarea name="message" placeholder="How can we help?" rows="3" style={{
         padding: '1rem 1.2rem',
         borderRadius: '14px',
         border: '1px solid rgba(255,255,255,0.1)',
