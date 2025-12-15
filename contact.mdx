@@ -5,47 +5,27 @@ description: "Connect with Frata Robotics — Accelerating U.S. Agriculture."
 
 ## Partner with Frata Robotics
 
-Frata Robotics collaborates with robotics, drone, and IoT manufacturers advancing agricultural technology across the Pacific Northwest.\
+Frata Robotics collaborates with robotics, drone, and IoT manufacturers advancing agricultural technology across the Pacific Northwest.
+
 Please share your details below and our operations team will reach out shortly.
 
 ---
 
 ### Contact Information
 
-<ParamField body="full_name" type="string" required={false} placeholder="John Doe">
-  Full Name
-</ParamField>
-
-<ParamField body="company" type="string" required placeholder="Frata Robotics">
-  Company Name
-</ParamField>
-
-<ParamField body="email" type="string" required placeholder="you@company.com">
-  Business Email
-</ParamField>
-
-<ParamField body="phone" type="string" placeholder="+1 (509) 555-1234">
-  Contact Number
-</ParamField>
-
----
-
-### Project Details
-
-<ParamField body="region" type="string" placeholder="Oregon, Washington, Idaho">
-  Operating Region
-</ParamField>
-
-<ParamField body="interest" type="string" placeholder="e.g., Fulfillment, Field Testing, Integration">
-  Area of Interest
-</ParamField>
-
-<ParamField body="message" type="string" placeholder="Briefly describe your goals or project">
-  Additional Details
-</ParamField>
-
----
-
-<Button href="mailto:harminder@frata.ag">
-  Submit Inquiry
-</Button>
+<form className="mt-8 dark p-1 max-w-[22.5rem] w-full rounded-full border border-border-soft backdrop-blur-[12px] bg-border-soft flex items-center gap-1.5">
+  <input 
+    type="email" 
+    required 
+    inputMode="email" 
+    autoComplete="email" 
+    placeholder="Email address" 
+    className="px-3 h-8 outline-none w-full placeholder:text-muted text-text-main text-[15px] font-medium leading-[150%]"
+  />
+  <button 
+    type="submit"
+    className="inline-flex items-center outline-offset-2 h-fit focus-visible:outline-2 focus-visible:outline-brand justify-center cursor-pointer gap-1.5 whitespace-nowrap rounded-full font-medium shrink-0 transition-[color,background-color] duration-100 shadow-button-sm bg-background-invert text-text-invert border border-background-invert hover:bg-background-invert/85 text-[15px] py-[4.5px] px-3"
+  >
+    Start now
+  </button>
+</form>
