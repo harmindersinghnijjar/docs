@@ -15,7 +15,7 @@
         "groups": [
           {
             "group": "Company",
-            "pages": ["index", "facility", "mission", "partners", "contact"]
+            "pages": ["Home"]
           }
         ]
       }
