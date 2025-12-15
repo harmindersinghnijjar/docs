@@ -13,137 +13,54 @@ Please share your details below and our operations team will reach out shortly.
 
 ### Contact Information
 
-<div className="mt-8 max-w-2xl">
-  <form className="space-y-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="space-y-2">
-        <label htmlFor="firstName" className="block text-sm font-medium text-gray-300">
-          First Name *
-        </label>
-        <input
-          type="text"
-          id="firstName"
-          required
-          className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder:text-gray-500 transition-all"
-          placeholder="John"
-        />
-      </div>
-      
-      <div className="space-y-2">
-        <label htmlFor="lastName" className="block text-sm font-medium text-gray-300">
-          Last Name *
-        </label>
-        <input
-          type="text"
-          id="lastName"
-          required
-          className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder:text-gray-500 transition-all"
-          placeholder="Doe"
-        />
-      </div>
-    </div>
+<Note>
+**Option 1: Embed a form service** - Replace this with Typeform, Fillout, Google Forms, or Tally embed
 
-    <div className="space-y-2">
-      <label htmlFor="email" className="block text-sm font-medium text-gray-300">
-        Email Address *
-      </label>
-      <input
-        type="email"
-        id="email"
-        required
-        inputMode="email"
-        autoComplete="email"
-        className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder:text-gray-500 transition-all"
-        placeholder="john@company.com"
-      />
-    </div>
+**Option 2: Use the custom React form below** - Save as `/snippets/partner-form.jsx` and import it
+</Note>
 
-    <div className="space-y-2">
-      <label htmlFor="company" className="block text-sm font-medium text-gray-300">
-        Company Name *
-      </label>
-      <input
-        type="text"
-        id="company"
-        required
-        className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder:text-gray-500 transition-all"
-        placeholder="Your company"
-      />
-    </div>
+<Card title="Submit Partnership Inquiry" icon="envelope" href="mailto:partnerships@fratarobotics.com?subject=Partnership Inquiry">
+  Email us directly at partnerships@fratarobotics.com
+</Card>
 
-    <div className="space-y-2">
-      <label htmlFor="partnerType" className="block text-sm font-medium text-gray-300">
-        Partnership Interest *
-      </label>
-      <select
-        id="partnerType"
-        required
-        className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white transition-all appearance-none cursor-pointer"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-          backgroundPosition: 'right 0.5rem center',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '1.5em 1.5em',
-          paddingRight: '2.5rem'
-        }}
-      >
-        <option value="">Select partnership type</option>
-        <option value="robotics">Robotics Manufacturer</option>
-        <option value="drone">Drone Technology</option>
-        <option value="iot">IoT Solutions</option>
-        <option value="agricultural">Agricultural Equipment</option>
-        <option value="software">Software Integration</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
+---
 
-    <div className="space-y-2">
-      <label htmlFor="message" className="block text-sm font-medium text-gray-300">
-        Tell us about your technology
-      </label>
-      <textarea
-        id="message"
-        rows={4}
-        className="w-full px-4 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder:text-gray-500 transition-all resize-y"
-        placeholder="Share details about your products, capabilities, and how you envision partnering with Frata Robotics..."
-      ></textarea>
-    </div>
+### Alternative: Custom Form Integration
 
-    <div className="flex items-start space-x-3">
-      <input
-        type="checkbox"
-        id="consent"
-        required
-        className="mt-1 w-4 h-4 rounded border-zinc-800 bg-zinc-900/50 text-orange-500 focus:ring-2 focus:ring-orange-500 focus:ring-offset-0"
-      />
-      <label htmlFor="consent" className="text-sm text-gray-400">
-        I agree to be contacted by Frata Robotics regarding partnership opportunities and understand that my information will be processed according to the privacy policy.
-      </label>
-    </div>
+If you want to use a form service, here are the recommended options:
 
-    <button
-      type="submit"
-      className="w-full md:w-auto px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-zinc-950"
-    >
-      Submit Partnership Inquiry
-    </button>
-  </form>
-</div>
+<CardGroup cols={2}>
+  <Card title="Typeform" icon="clipboard-question" href="https://typeform.com">
+    Beautiful, conversational forms with great UX
+  </Card>
+  
+  <Card title="Fillout" icon="file-lines" href="https://fillout.com">
+    Powerful forms with conditional logic
+  </Card>
+  
+  <Card title="Tally" icon="check-square" href="https://tally.so">
+    Free, unlimited forms with no branding
+  </Card>
+  
+  <Card title="Google Forms" icon="google" href="https://forms.google.com">
+    Simple, free, integrates with Google Sheets
+  </Card>
+</CardGroup>
 
-<div className="mt-12 p-6 bg-zinc-900/30 border border-zinc-800 rounded-lg max-w-2xl">
-  <h3 className="text-lg font-semibold text-white mb-2">What happens next?</h3>
-  <ul className="space-y-2 text-gray-400 text-sm">
-    <li className="flex items-start">
-      <span className="text-orange-500 mr-2">→</span>
-      Our operations team will review your inquiry within 2-3 business days
-    </li>
-    <li className="flex items-start">
-      <span className="text-orange-500 mr-2">→</span>
-      We'll schedule a discovery call to discuss partnership opportunities
-    </li>
-    <li className="flex items-start">
-      <span className="text-orange-500 mr-2">→</span>
-      Explore technical integration and collaboration possibilities
-    </li>
-  </ul>
-</div>
+---
+
+### What happens next?
+
+<Steps>
+  <Step title="Review">
+    Our operations team will review your inquiry within 2-3 business days
+  </Step>
+  
+  <Step title="Discovery Call">
+    We'll schedule a call to discuss partnership opportunities
+  </Step>
+  
+  <Step title="Technical Integration">
+    Explore integration possibilities and collaboration details
+  </Step>
+</Steps>
